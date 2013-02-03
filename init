@@ -11,7 +11,7 @@ sudo pip install virtualenvwrapper
 echo export WORKON_HOME=~/.virtualenvs >> ~/.profile
 echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> ~/.profile
 echo export PIP_RESPECT_VIRTUALENV=true >> ~/.profile
-echo source `which /usr/local/bin/virtualenvwrapper.sh` >> ~/.profile
+echo source `which virtualenvwrapper.sh` >> ~/.profile
 
 mkdir ~/.virtualenvs
 source ~/.profile
