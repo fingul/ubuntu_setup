@@ -10,11 +10,12 @@ sudo easy_install pip
 sudo pip install virtualenvwrapper
 
 WORKON_HOME=~/.virtualenvs
+BASH_PROFILE=~/.profile
 
-echo export WORKON_HOME=$WORKON_HOME >> ~/.profile
-echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> ~/.profile
-echo export PIP_RESPECT_VIRTUALENV=true >> ~/.profile
-echo source `which virtualenvwrapper.sh` >> ~/.profile
+echo export WORKON_HOME=$WORKON_HOME >> BASH_PROFILE
+echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> BASH_PROFILE
+echo export PIP_RESPECT_VIRTUALENV=true >> BASH_PROFILE
+echo source `which virtualenvwrapper.sh` >> BASH_PROFILE
 
-mkdir ~/.virtualenvs
-source ~/.profile
+mkdir $WORKON_HOME
+source BASH_PROFILE
