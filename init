@@ -12,10 +12,10 @@ sudo pip install virtualenvwrapper
 WORKON_HOME=~/.virtualenvs
 BASH_PROFILE=~/.profile
 
-echo export WORKON_HOME=$WORKON_HOME >> BASH_PROFILE
-echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> BASH_PROFILE
-echo export PIP_RESPECT_VIRTUALENV=true >> BASH_PROFILE
-echo source `which virtualenvwrapper.sh` >> BASH_PROFILE
+echo export WORKON_HOME=$WORKON_HOME >> $BASH_PROFILE
+echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> $BASH_PROFILE
+echo export PIP_RESPECT_VIRTUALENV=true >> $BASH_PROFILE
+echo source `which virtualenvwrapper.sh` >> $BASH_PROFILE
 
 mkdir $WORKON_HOME
-source BASH_PROFILE
+source $BASH_PROFILE
