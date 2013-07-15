@@ -15,6 +15,7 @@ BASH_PROFILE=~/.profile
 echo export WORKON_HOME=$WORKON_HOME >> $BASH_PROFILE
 echo export PIP_VIRTUALENV_BASE=$WORKON_HOME >> $BASH_PROFILE
 echo export PIP_RESPECT_VIRTUALENV=true >> $BASH_PROFILE
+echo export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache >> $BASH_PROFILE
 echo source `which virtualenvwrapper.sh` >> $BASH_PROFILE
 
 mkdir $WORKON_HOME
